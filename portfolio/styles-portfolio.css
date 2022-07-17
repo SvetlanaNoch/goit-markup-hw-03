@@ -1,16 +1,16 @@
 body {
     font-family: 'Raleway', sans-serif;
     font-family: 'Roboto', sans-serif;
-    width: 1600px;
     margin: 0px;
     background: #FFFFFF;
 
 }
 
 .page-header{
-    border: 1px solid #EEEEEE;
-   
-}
+    padding-top: 24px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #ECECEC;
+} 
 
 .container{
     width: 1200px;
@@ -27,8 +27,7 @@ body {
 
 .page-nav{
     display: flex;
-    margin-top: 24px;
-    margin-bottom: 25px;
+
 }
 
 .logo{
@@ -53,14 +52,13 @@ font-size: 26px;
     display: flex;
     align-items:center;
     list-style: none;
-
-   
 }
 
 .page-header-contact-container {
     display: flex;   
     align-items: center;
-    margin-left: auto;}
+    margin-left: auto;
+}
 
 .menu-item{
     margin-right:50px ;
@@ -123,9 +121,21 @@ display: flex;
 }
 
 
-.title{
-    visibility: hidden;
-}
+
+
+    .visually-hidden { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    margin: -1px; 
+    border: 0; 
+    padding: 0; 
+    white-space: nowrap; 
+    clip-path: inset(100%); 
+    clip: rect(0 0 0 0); 
+    overflow: hidden; 
+    } 
+
 
 
 .section-photo{
@@ -137,8 +147,9 @@ display: flex;
 .box-btn{
     display:flex;
     align-items:center;
-    margin-bottom: 34px;
-    margin-left: 295px;
+    margin-bottom: 50px;
+    justify-content: center;
+
 }
 
 .portfolio-btn{
@@ -167,18 +178,17 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
 .photo-string{
     display: flex;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
 
-.photo-string:nth-last-child(-n + 3){
-    margin-bottom: 30px;}
 
 
 .card-list{
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
-
+    padding: 20px 24px 20px 24px;
 }
 
 .card-title{
@@ -188,8 +198,6 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     line-height: 2;
     letter-spacing: 0.06em;
     color: #212121;
-    margin-top: 20px;
-    margin-left: 24px;
     margin-bottom: 4px;
 }
 
@@ -199,18 +207,12 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
     line-height: 1.87;
     letter-spacing: 0.03em;
     color: #757575;
-    margin-left: 24px;
-    margin-bottom: 20px;
 }
 
 .footer{
-    width: 1600px;
-    height: 252px;
-    background: #2F303A;
-}
-
-.footer-box-logo{
-    padding-top: 60px;
+   background: #2F303A;
+   padding-top: 60px;
+   padding-bottom: 60px;
 }
 
 .logo-link{
@@ -255,7 +257,6 @@ font-style: normal;
 font-size: 14px;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-
 }
 
 .contact-phone{
@@ -268,7 +269,6 @@ font-style: normal;
 font-size: 14px;
 letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
-padding-bottom: 60px;
 }
 .link {
     text-decoration:none;
